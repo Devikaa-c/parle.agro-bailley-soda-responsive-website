@@ -1,0 +1,287 @@
+/*header section containing navbar*/
+
+header {
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+}
+
+/*brands dropdown is divided into two columns*/
+.brands ul {
+    columns: 2;
+}
+
+/*applying hover effect on each text on navbar*/
+
+.nav-link:hover {
+    color: #e53f27 !important;
+    transition: 0.5s;
+}
+
+/*applying border and background color to dropdown*/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-bottom: 5px solid black;
+    background-color: #e53f27;
+}
+
+/*changing text color of dropdown items*/
+.navbar .dropdown-item {
+    color: white;
+}
+
+/*applying hover on dropdown texts*/
+.navbar .dropdown-item:hover {
+    background-color: #e53f27;
+    color: black;
+    transition: 0.5s;
+}
+
+/*parle agro image properties*/
+
+.navbar img {
+    width: 119px;
+    margin-left: 15px;
+}
+
+/*padding each items on navbar*/
+.navbar .nav-item {
+    padding-right: 2rem;
+}
+
+/*content containing left side with leaf image and right side with text*/
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    justify-content: center;
+    background-color: #f8a120;
+}
+
+.content-right {
+    width: 50%;
+    padding: 160px 120px 350px 120px;
+}
+
+.content-right p {
+    font-size: 24px;
+}
+
+.leaf img {
+    width: 65%;
+    position: absolute;
+    left: 116px;
+}
+
+.leaf img .leaf {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.leaf-text {
+    text-align: center;
+    position: relative;
+}
+
+.leaf-text h1 {
+    font-family: EksellDisplayWeb-Small;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 159px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer1 {
+    display: list-item;
+    list-style: none;
+    font-family: merivaregular;
+    font-size: 14px;
+    color: #0a0b27;
+}
+
+.texxt {
+    margin-top: -16px;
+}
+
+.footer2 {
+    display: list-item;
+    list-style: none;
+    font-family: merivaregular;
+    font-size: 14px;
+    color: #0a0b27;
+}
+
+.footer2 a {
+    display: list-item;
+    text-decoration: none;
+    color: #0a0b27;
+    font-weight: 700;
+}
+
+.footer3 {
+    display: list-item;
+    list-style: none;
+    font-family: merivaregular;
+    font-size: 14px;
+    color: #0a0b27;
+}
+
+.footer3 a {
+    font-family: merivaregular;
+    text-decoration: none;
+    color: #0a0b27;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer3 p {
+    line-height: 10px;
+}
+
+.fa-brands {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+footer a:hover {
+    color: #e53f27;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.fa-brands:hover {
+    color: #e53f27;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 992px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left {
+        width: 100%;
+        height: 860px;
+    }
+
+    .content-right {
+        width: 100%;
+        height: 860px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left {
+        width: 100%;
+        height: 860px;
+    }
+
+    .content-right {
+        width: 100%;
+        height: 860px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .waterdrops {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left {
+        width: 100%;
+        height: 860px;
+    }
+
+    .content-right {
+        width: 100%;
+        height: 860px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .waterdrops {
+        padding-top: 50px;
+    }
+
+    .leaf img {
+        width: 65%;
+        position: absolute;
+        left: 67px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left {
+        width: 100%;
+        height: 860px;
+    }
+
+    .content-right {
+        width: 100%;
+        height: 860px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .waterdrops {
+        padding-top: 50px;
+    }
+
+    .leaf img {
+        width: 65%;
+        position: absolute;
+        left: 67px;
+    }
+}
